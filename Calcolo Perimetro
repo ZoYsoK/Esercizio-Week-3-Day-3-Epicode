@@ -5,24 +5,29 @@ print("1. Quadrato")
 print("2. Cerchio")
 print("2. Rettangolo")
 
-scelta=int(input("Inserisci il numero in corrispondenza della figura geometrica: "))
+while True:
+    scelta=int(input("Inserisci il numero in corrispondenza della figura geometrica: "))
 
-if scelta == 1:
-    lato = float(input("Inserisci il lato: "))
-    perimetro_quadrato = lato * 4
-    print("Il perimentro del quadrato e: ", perimetro_quadrato)
+    if scelta == 1:
+        lato = float(input("Inserisci il lato: "))
+        perimetro_quadrato = lato * 4
+        print("Il perimentro del quadrato e: ", perimetro_quadrato)
     
-elif scelta == 2:
-    raggio = float(input("Inserisci il raggio: "))
-    perimetro_cerchio= 2 * math.pi * raggio
-    print("La circonferenza 4del cerchio e: ", perimetro_cerchio)
+    elif scelta == 2:
+        raggio = float(input("Inserisci il raggio: "))
+        perimetro_cerchio= 2 * math.pi * raggio
+        print("La circonferenza 4del cerchio e: ", perimetro_cerchio)
 
-elif scelta== 3:
-    base = float(input("Inserisci la base: "))
-    altezza = float(input("Inserisci l'altezza: "))
-    perimetro_rettangolo = float
-    perimetro_rettangolo = base*2 + altezza*2
-    print("Il perimetro del rettangolo e'", perimetro_rettangolo)
+    elif scelta== 3:
+        base = float(input("Inserisci la base: "))
+        altezza = float(input("Inserisci l'altezza: "))
+        perimetro_rettangolo = float
+        perimetro_rettangolo = base*2 + altezza*2
+        print("Il perimetro del rettangolo e'", perimetro_rettangolo)
 
-else:
-    print("Scelta non valida.")
+    elif scelta ==4:
+        print("Programma terminato.")
+        break
+    
+    else:
+        print("Scelta non valida.")   
